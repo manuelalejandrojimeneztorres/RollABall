@@ -37,11 +37,24 @@ To successfully run this project, ensure you have:
 
 The Roll-a-Ball game has been enhanced with the following functionalities:
 
-1. **Jump Height Restriction** - The player’s jump is capped to stay within the game plane, preventing unintended exits.
+1. **Jump Height Restriction** - The player’s jump is capped to stay within the game plane, preventing unintended exits. Additionally, the player can only perform a jump when in contact with the ground. This mechanic ensures that the player cannot jump indefinitely and exit the game plane.
 2. **Keyboard Shortcuts for Scene Navigation** - Quick and convenient keyboard shortcuts allow smooth transitions between game scenes.
 3. **Key-Specific Player Actions** - Keybindings for actions enhance accessibility and compatibility across different devices.
+
+| Keyboard Shortcut | Action |
+| ----------- | ----------- |
+| `Space` | Jump |
+| `Escape` | Pause the game |
+
 4. **Collision Sound Effects** - Added immersive sound effects trigger on each collision event, enhancing game feedback.
 5. **Button Controls** - Button-based actions streamline gameplay, improving flow and responsiveness.
+
+| Button | Action |
+| ----------- | ----------- |
+| `Resume` | Resume the game |
+| `Restart` | Restart the game |
+| `Next Level` | Go to the next level (if it is not the last one) |
+| `Start Menu` | Go to the start menu |
 
 ## Built With
 
@@ -56,6 +69,6 @@ This project is licensed under the Apache License, version 2.0 - see the [LICENS
 
 ## Acknowledgments
 
-- **Tiburcio Cruz** - Special thanks to my instructor, [Tiburcio Cruz](https://github.com/tcrurav), for his guidance and support throughout the development of this project.
+- **Tiburcio Cruz Ravelo** - Special thanks to my instructor, [Tiburcio Cruz Ravelo](https://github.com/tcrurav), for his guidance and support throughout the development of this project.
 - **Unity Technologies** - For providing the original "Roll-a-Ball" tutorial and resources.
 - **PurpleBooth** - For the README template, which greatly influenced the structure of this documentation. See the original gist [here](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
