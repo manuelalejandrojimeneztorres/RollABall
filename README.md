@@ -164,7 +164,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 - **Tiburcio Cruz Ravelo**  
   For mentorship and support throughout the project.
 - **Microsoft Corporation**  
-  For providing a robust development environment with Rider IDE.
+  For providing a robust development environment with Visual Studio 2022 Community Edition IDE.
 - **OpenXR and XR Toolkit Documentation**  
   For detailed guidance on implementing advanced VR features.
 
