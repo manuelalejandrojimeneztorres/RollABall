@@ -244,7 +244,7 @@ public class PlayerController : MonoBehaviour
         startMenuButton.SetActive(true);
 
         // Show the button to go to the next level only if the current level is not the last one.
-        if (SceneManager.GetActiveScene().name != "Level3")
+        if (SceneManager.GetActiveScene().name != "Level4_VR")
         {
             nextLevelButton.SetActive(true);
         }

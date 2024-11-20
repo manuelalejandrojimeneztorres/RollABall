@@ -59,7 +59,7 @@ public class SceneButtonController : MonoBehaviour
         restartButton.SetActive(isPaused);
         startMenuButton.SetActive(isPaused);
 
-        if (SceneManager.GetActiveScene().name == "Level3")
+        if (SceneManager.GetActiveScene().name == "Level4_VR")
         {
             nextLevelButton.SetActive(false);
         }
@@ -96,6 +96,12 @@ public class SceneButtonController : MonoBehaviour
         SceneManager.LoadScene("Level3");
     }
 
+    // Method for loading Level 4 (VR).
+    public void LoadLevel4VR()
+    {
+        SceneManager.LoadScene("Level4_VR");
+    }
+
     // Method to restart the current level.
     public void RestartLevel()
     {
@@ -114,6 +120,9 @@ public class SceneButtonController : MonoBehaviour
                 break;
             case "Level2":
                 LoadLevel3();
+                break;
+            case "Level3":
+                LoadLevel4VR();
                 break;
         }
     }

@@ -1,98 +1,178 @@
-# Roll-a-Ball 3D Game
+# Roll-a-Ball 3D VR Game
 
-A classic 3D game built with Unity 2022.3.50f1 and C#, based on Unity's beginner-friendly "Roll-a-Ball" tutorial. This project is designed to enhance the original game experience with new player controls, sound effects, and accessibility features. Follow the instructions below to set up and explore the game on your own system.
+An enhanced version of the classic _Roll-a-Ball_ game, now featuring **Virtual Reality (VR)** integration and a multi-level gameplay experience. Built using **Unity 2022.3.50f1**, this project leverages modern VR technologies, including **XR Interaction Toolkit**, **OpenXR**, and **XR Plug-in Management**, to deliver immersive gameplay with advanced VR functionalities such as teleportation, locomotion, object interaction, and gesture controls.
 
 ## Table of Contents
 
+- [Project Description](#project-description)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Features](#features)
+  - [Core Game Mechanics](#core-game-mechanics)
+  - [Virtual Reality Features](#virtual-reality-features)
 - [Built With](#built-with)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
+---
+
+## Project Description
+
+This project extends the _Roll-a-Ball_ game into a full-fledged VR experience with four challenging levels, culminating in a **VR-enabled Level 4**. Players can interact with the environment using VR controllers, explore the game world with teleportation and smooth locomotion, and engage with objects dynamically using XR technologies. Whether you’re a gamer or a VR enthusiast, this project provides an engaging platform to experience advanced Unity VR development.
+
+[🔼 Back to Top](#table-of-contents)
+
+---
+
 ## Getting Started
 
-These instructions will guide you through cloning the project and running it on your local machine for development, testing, or gameplay.
+Follow these steps to clone, build, and explore the project on your local machine.
 
 ### Prerequisites
 
-To successfully run this project, ensure you have:
+Ensure the following tools are installed on your system:
 
-- [Unity 2022.3.50f1](https://unity.com/releases/2022-lts) - The Unity editor version required to open and build the project.
-- [Git](https://git-scm.com/downloads) - To clone the project repository.
-- Optional: [Visual Studio](https://visualstudio.microsoft.com/) or [Rider](https://www.jetbrains.com/rider/) - For editing and debugging C# code.
+- **Unity 2022.3.50f1**  
+  Download from [Unity's official website](https://unity.com/releases/2022-lts).
+- **Git**  
+  Download from [Git's official website](https://git-scm.com/downloads).
+- **VR Headset**  
+  Compatible with OpenXR (e.g., Oculus Quest, HTC Vive, etc.).
+- Optional: **Visual Studio** or **JetBrains Rider**  
+  For editing and debugging C# scripts.
 
 [🔼 Back to Top](#table-of-contents)
+
+---
 
 ### Installation
 
 1. **Clone the Repository**
 
-   Clone this repository to your local machine using Git:
-
    ```bash
-   git clone https://github.com/manuelalejandrojimeneztorres/RollABall.git
+   git clone https://github.com/manuelalejandrojimeneztorres/RollABallVR.git
    ```
 
 2. **Open the Project in Unity**
 
-   - Launch Unity Hub, select **Open Project**, and navigate to the cloned directory.
-   - Choose **Unity 2022.3.50f1** as the project version if prompted.
+   - Open **Unity Hub** and select **Open Project**.
+   - Navigate to the cloned directory and select the project.
+   - Ensure **Unity 2022.3.50f1** is selected as the project version.
 
-3. **Run the Game**
+3. **Configure Build Settings**
 
-   - In the Unity Editor, open the main scene (`Assets/Scenes/StartMenu.unity`).
-   - Press **Play** to test the game within the Unity Editor.
-   - Alternatively, you can build the project for different platforms via **File > Build Settings**.
+   - Go to **File > Build Settings** and select the desired platform (e.g., PC or VR-supported platforms like Android for Oculus).
+   - Add all necessary scenes to the build.
+
+4. **Run the Game**
+   - Open the scene `Assets/Scenes/StartMenu.unity`.
+   - Click **Play** in the Unity Editor or build the project to test it on your VR device.
 
 [🔼 Back to Top](#table-of-contents)
+
+---
 
 ## Features
 
-The Roll-a-Ball game has been enhanced with the following functionalities:
+### Core Game Mechanics
 
-1. **Jump Height Restriction** - The player’s jump is capped to stay within the game plane, preventing unintended exits. Additionally, the player can only perform a jump when in contact with the ground. This mechanic ensures that the player cannot jump indefinitely and exit the game plane.
-2. **Keyboard Shortcuts for Scene Navigation** - Quick and convenient keyboard shortcuts allow smooth transitions between game scenes.
-3. **Key-Specific Player Actions** - Keybindings for actions enhance accessibility and compatibility across different devices.
+1. **Multi-Level Gameplay**
+   - Four unique levels, each progressively challenging.
+   - Collectible items to achieve level objectives.
+2. **Enhanced Player Controls**
 
-| Keyboard Shortcut | Action         |
-| ----------------- | -------------- |
-| `Space`           | Jump           |
-| `Escape`          | Pause the game |
+   - Restriction-based jumping to prevent unintended exits from the play area.
+   - Keyboard shortcuts and UI buttons for accessible navigation.
 
-4. **Collision Sound Effects** - Added immersive sound effects trigger on each collision event, enhancing game feedback.
-5. **Button Controls** - Button-based actions streamline gameplay, improving flow and responsiveness.
+3. **Immersive Audio Feedback**
 
-| Button       | Action                                           |
-| ------------ | ------------------------------------------------ |
-| `Resume`     | Resume the game                                  |
-| `Restart`    | Restart the game                                 |
-| `Next Level` | Go to the next level (if it is not the last one) |
-| `Start Menu` | Go to the start menu                             |
+   - Collision sound effects enhance the gaming experience.
+
+4. **Accessible Gameplay**
+   - Buttons for restarting levels, transitioning to the next level, and returning to the main menu.
+
+| Button       | Action                       |
+| ------------ | ---------------------------- |
+| `Resume`     | Resume the game              |
+| `Restart`    | Restart the current level    |
+| `Next Level` | Transition to the next level |
+| `Start Menu` | Return to the start menu     |
 
 [🔼 Back to Top](#table-of-contents)
+
+---
+
+### Virtual Reality Features
+
+**Available in Level 4:**
+
+1. **Locomotion Systems**
+
+   - Teleportation and continuous movement for navigating the environment.
+
+2. **Interaction Features**
+
+   - XR Ray Interactor for object interaction.
+   - Snap Turn and Continuous Turn for rotation.
+   - Object grabbing, manipulation, and throwing using VR controllers.
+
+3. **Controller and Gesture Support**
+
+   - Full VR controller support for actions like grabbing and rotating objects.
+   - Hand gesture recognition for intuitive controls.
+
+4. **Immersive XR Setup**
+   - Configured with **XR Plug-in Management** and **OpenXR** for cross-platform compatibility.
+   - **XR Rig** for accurate VR interaction.
+
+[🔼 Back to Top](#table-of-contents)
+
+---
 
 ## Built With
 
-- **Unity 2022.3.50f1** - The core game development engine used.
-- **C#** - The programming language for scripting gameplay mechanics and features.
-- **Git** - Version control for project management and collaboration.
-- **Visual Studio / Rider** - Recommended editors for C# code development and debugging.
+- **Unity 2022.3.50f1**  
+  Game engine for 3D development.
+- **XR Interaction Toolkit**  
+  Provides XR-specific components and interaction systems.
+- **OpenXR**  
+  Ensures compatibility with various VR hardware.
+- **C#**  
+  Primary programming language for game logic and mechanics.
+- **Git**  
+  Version control for project management and collaboration.
+- **Visual Studio / Rider**  
+  Recommended IDEs for script editing and debugging.
 
 [🔼 Back to Top](#table-of-contents)
+
+---
 
 ## License
 
-This project is licensed under the Apache License, version 2.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 [🔼 Back to Top](#table-of-contents)
 
+---
+
 ## Acknowledgments
 
-- **Tiburcio Cruz Ravelo** - Special thanks to my instructor, [Tiburcio Cruz Ravelo](https://github.com/tcrurav), for his guidance and support throughout the development of this project.
-- **Unity Technologies** - For providing the original "Roll-a-Ball" tutorial and resources.
-- **PurpleBooth** - For the README template, which greatly influenced the structure of this documentation. See the original gist [here](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
+- **Unity Technologies**  
+  For the original _Roll-a-Ball_ tutorial and XR tools.
+- **Tiburcio Cruz Ravelo**  
+  For mentorship and support throughout the project.
+- **Microsoft Corporation**  
+  For providing a robust development environment with Rider IDE.
+- **OpenXR and XR Toolkit Documentation**  
+  For detailed guidance on implementing advanced VR features.
+
+[🔼 Back to Top](#table-of-contents)
+
+---
+
+Enjoy the immersive gameplay and explore the world of VR with **Roll-a-Ball VR**!  
+Feel free to contribute to the project or share your feedback. Happy gaming! 🎮
 
 [🔼 Back to Top](#table-of-contents)
