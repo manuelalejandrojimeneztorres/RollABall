@@ -51,7 +51,7 @@ Ensure the following tools are installed on your system:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/manuelalejandrojimeneztorres/RollABallVR.git
+   git clone https://github.com/manuelalejandrojimeneztorres/RollABall.git
    ```
 
 2. **Open the Project in Unity**
